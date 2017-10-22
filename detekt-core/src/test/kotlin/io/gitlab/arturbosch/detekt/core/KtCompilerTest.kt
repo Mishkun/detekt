@@ -15,7 +15,7 @@ internal class KtCompilerTest {
 		val ktFile = ktCompiler.compile(path.resolve("Default.kt"))
 
 		assertThat(ktFile.getUserData(KtCompiler.LINE_SEPARATOR)).isEqualTo("\n")
-		assertThat(ktFile.getUserData(KtCompiler.RELATIVE_PATH)).isEqualTo("Default.kt")
+		assertThat(ktFile.getUserData(KtCompiler.RELATIVE_PATH)).isEqualTo("cases/Default.kt")
 	}
 
 }
